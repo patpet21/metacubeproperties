@@ -115,15 +115,38 @@
             color: #ff6f61;
         }
         @media (max-width: 768px) {
+            body {
+                padding: 20px; /* Aggiungi un padding per il contenuto */
+            }
+            
+            header {
+                padding: 10px; /* Riduci il padding dell'header */
+            }
+
+            header img {
+                width: 40px; /* Riduci la dimensione del logo */
+            }
+
             h1 {
-                font-size: 28px;
+                font-size: 24px; /* Riduci la dimensione del titolo */
             }
+
             p {
-                font-size: 16px;
+                font-size: 16px; /* Riduci la dimensione del testo */
+                line-height: 1.4; /* Aumenta l'interlinea per una migliore leggibilità */
             }
+
             a.button {
-                padding: 12px 25px;
-                font-size: 16px;
+                padding: 10px 20px; /* Riduci il padding dei pulsanti */
+                font-size: 16px; /* Riduci la dimensione del testo nei pulsanti */
+            }
+
+            .container {
+                padding: 20px; /* Riduci il padding del contenitore */
+            }
+
+            .social-icons a {
+                font-size: 20px; /* Riduci la dimensione delle icone social */
             }
         }
     </style>
@@ -140,7 +163,7 @@
         <a href="https://gamma.app/docs/From-Owner-to-CEO-Transform-Your-Property-into-a-Global-Digital-A-t6mxb6t77z1grmy" target="_blank" class="button download-button"><span>Download Beta Presentation</span></a>
         <p>Support our project and help us bring this groundbreaking innovation to life. Your contribution is vital in shaping the future of real estate investment.</p>
         <a href="https://example.com/donate" target="_blank" class="button donate-button"><span>Leave a Tip</span></a>
-        <form id="coinpayments-form" action="https://www.coinpayments.net/index.php" method="post" target="_blank">
+        <form action="https://www.coinpayments.net/index.php" method="post">
             <input type="hidden" name="cmd" value="_pay">
             <input type="hidden" name="reset" value="1">
             <input type="hidden" name="merchant" value="d39a52623b7242fe0a6a0f6d6981341e">
@@ -152,7 +175,7 @@
             <input type="hidden" name="want_shipping" value="1">
             <input type="hidden" name="success_url" value="https://t.me/metacubeverse">
             <input type="hidden" name="allow_extra" value="0">
-            <input type="image" src="https://www.coinpayments.net/images/pub/buynow-black2.png" alt="Buy Now with CoinPayments.net" onclick="openInNewTab(event)">
+            <input type="image" src="https://www.coinpayments.net/images/pub/buynow-wide-yellow.png" alt="Compra Ora con CoinPayments.net">
         </form>
         <div class="social-icons">
             <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
