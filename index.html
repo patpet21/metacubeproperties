@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programma di Tokenizzazione degli Appartamenti</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('https://i.ibb.co/Qxj0Fjr/7f060a81-1ce9-4cc3-9027-c9d7778e496c.png') no-repeat center center/cover;
+            color: white;
+            overflow: hidden;
+        }
+        header {
+            width: 100%;
+            background-color: black;
+            padding: 10px 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            width: 50px;
+            height: auto;
+            margin-left: 10px;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px 60px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: 60px; /* Adjust for header height */
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        a.button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        a.button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            transition: width 0.3s ease;
+            z-index: 1;
+        }
+        a.button:hover::before {
+            width: 100%;
+        }
+        a.button span {
+            position: relative;
+            z-index: 2;
+        }
+        .download-button {
+            background: #ff6f61;
+            box-shadow: 0 5px 15px rgba(255, 111, 97, 0.5);
+        }
+        .download-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(255, 111, 97, 0.7);
+        }
+        .donate-button {
+            background: #6bc46b;
+            box-shadow: 0 5px 15px rgba(107, 196, 107, 0.5);
+        }
+        .donate-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(107, 196, 107, 0.7);
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #ff6f61;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            p {
+                font-size: 16px;
+            }
+            a.button {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="https://i.ibb.co/6RY0qS9m/Progetto-senza-titolo-2025-02-02-T122219-982.png" alt="Logo">
+    </header>
+    <div class="container">
+        <h1>Tokenize the Future</h1>
+        <p>Discover how apartment tokenization can revolutionize the real estate market by providing increased liquidity and fractional ownership.</p>
+        <p>Experience enhanced transparency and join us in exploring the future of property investment through blockchain technology.</p>
+        <a href="https://gamma.app/docs/From-Owner-to-CEO-Transform-Your-Property-into-a-Global-Digital-A-t6mxb6t77z1grmy" target="_blank" class="button download-button"><span>Download Beta Presentation</span></a>
+        <p>Support our project and help us bring this groundbreaking innovation to life. Your contribution is vital in shaping the future of real estate investment.</p>
+        <a href="https://example.com/donate" target="_blank" class="button donate-button"><span>Leave a Tip</span></a>
+        <form id="coinpayments-form" action="https://www.coinpayments.net/index.php" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_pay">
+            <input type="hidden" name="reset" value="1">
+            <input type="hidden" name="merchant" value="d39a52623b7242fe0a6a0f6d6981341e">
+            <input type="hidden" name="item_name" value="MetaCube Properties Tokenization">
+            <input type="hidden" name="currency" value="USDC.BEP20">
+            <input type="hidden" name="amountf" value="10.00000000">
+            <input type="hidden" name="quantity" value="1">
+            <input type="hidden" name="allow_quantity" value="1">
+            <input type="hidden" name="want_shipping" value="1">
+            <input type="hidden" name="success_url" value="https://t.me/metacubeverse">
+            <input type="hidden" name="allow_extra" value="0">
+            <input type="image" src="https://www.coinpayments.net/images/pub/buynow-black2.png" alt="Buy Now with CoinPayments.net" onclick="openInNewTab(event)">
+        </form>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://telegram.org" target="_blank"><i class="fab fa-telegram"></i></a>
+        </div>
+    </div>
+    <script>
+        function openInNewTab(event) {
+            event.preventDefault();
+            const form = document.getElementById('coinpayments-form');
+            const formData = new FormData(form);
+            const queryString = new URLSearchParams(formData).toString();
+            window.open(form.action + '?' + queryString, '_blank');
+        }
+    </script>
+</body>
+</html>
